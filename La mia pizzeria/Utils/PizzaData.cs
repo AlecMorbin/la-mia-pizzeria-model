@@ -8,12 +8,10 @@ namespace La_mia_pizzeria.Utils
 
         public static List<Pizza> GetPizzas()
         {
-            if( pizzas != null )
-                return pizzas;
-
+           
             for (int i = 0; i < 6; i++)
             {
-                Pizza pizza = new Pizza(i,"Pizza n-" +i, "Lorem Ipsum is simply dummy text of the printing and typesetting... ","/img/pizza-margherita");
+                Pizza pizza = new Pizza(i,"Pizza n-" +i, "Lorem Ipsum is simply dummy text of the printing and typesetting... ","/img/pizza-margherita.png");
                 pizzas.Add(pizza);
             }
 
