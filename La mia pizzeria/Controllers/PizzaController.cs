@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using La_mia_pizzeria.Models;
+using La_mia_pizzeria.Utils;
+
 
 namespace La_mia_pizzeria.Controllers
 {
@@ -6,7 +9,8 @@ namespace La_mia_pizzeria.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<Pizza> pizzas = PizzaData.GetPizzas();
+            return View(pizzas);
         }
     }
 }
